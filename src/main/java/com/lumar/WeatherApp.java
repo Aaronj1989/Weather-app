@@ -1,9 +1,8 @@
 package com.lumar.weather;
 
-import java.util.ArrayList;
 
 import com.lumar.controller.Scene1Controller;
-import com.lumar.rest.ForecastCaller;
+import com.lumar.weather.Weather;
 
 import javafx.application.Application;
 import javafx.fxml.FXML;

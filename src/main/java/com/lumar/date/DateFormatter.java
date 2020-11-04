@@ -34,7 +34,6 @@ public class DateFormatter {
 	
 	public Boolean isUpdated(String weatherDate) {
 		
-		System.out.println(weatherDate);
 		boolean updated = true;
 		
 		Calendar today = Calendar.getInstance();

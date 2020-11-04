@@ -40,7 +40,7 @@ public class GiphyCaller {
 		try{
 			response = client.newCall(request).execute().body();
 			
-			System.out.println(response);
+			
 			String responseString = response.string();
 			
 			JSONObject jsnObj = new JSONObject(responseString);
@@ -48,7 +48,7 @@ public class GiphyCaller {
 			this.giphyUrl = jsnObj.getJSONObject("data").getJSONObject("images").getJSONObject("fixed_height_small").getString("url");
 				
 			formatUrl(giphyUrl); 
-			System.out.println("returning giphyURL to imageview" + giphyUrl);
+	
 		}catch(IOException e) {
 			
 			e.printStackTrace();

@@ -87,7 +87,6 @@ public class Scene2Controller extends Controller {
 
 		timeline.setOnFinished(event1 -> {
 			parentContainer.getChildren().remove(scene2Pane);
-			// System.out.println("now back at scene " + scene1Controller.getSceneNumber());
 		});
 		timeline.play();
 
@@ -122,7 +121,6 @@ public class Scene2Controller extends Controller {
 
 			stackPane.getChildren().remove(scene2Pane);
 
-			System.out.println(scene3Controller.getLocationLabel());
 		});
 		timeline.play();
 
